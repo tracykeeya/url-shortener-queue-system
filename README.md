@@ -12,7 +12,7 @@ A Django application that shortens URLs and processes them asynchronously using 
 2. Worker picks it up → processes and generates a shortened URL.
 3. Worker handles failures gracefully with retry logic.
 
-****** How to Run**
+## How to Run
 1. `git clone ...`
 2. Setup Redis and install requirements `pip install -r requirements.txt`
 3. Run worker: `celery -A project worker --loglevel=info`
